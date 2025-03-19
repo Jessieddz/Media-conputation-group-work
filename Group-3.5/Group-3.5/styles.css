@@ -1,0 +1,18 @@
+
+header{
+background-color: aliceblue;
+text-align: center;
+}
+main{
+display: flex;
+}
+div.card{
+background-color: aquamarine;
+border: solid;
+margin: 1vw;
+padding: 1vw;
+box-shadow: 10px 10px;
+}
+div.card:hover{
+background-color: azure;
+}
