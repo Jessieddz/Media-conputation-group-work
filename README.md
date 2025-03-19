@@ -1,1 +1,0 @@
-# Media-conputation-group-work
