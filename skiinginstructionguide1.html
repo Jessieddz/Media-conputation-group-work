@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skiing Instruction Guide</title>
+    <style>
+    {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+  html, body {
+   width: 100%;
+   height: 100%;
+   scroll-behavior: smooth;
+   font-family: 'Times New Roman', Times, serif;
+   line-height: 1.6;
+   background-color: #fdfdfd;
+   color: #1e1e1e;
+ }
+  /* Typography */
+ h1, h2, h3, h4 {
+   font-family: 'Rubik Mono One', monospace;
+   color: #2d2d2d;
+   margin-bottom: 10px;
+ }
+  h1 {
+   font-size: 2.5rem;
+   text-align: center;
+   margin: 1em 0 0.5em;
+ }
+  h2 {
+   font-size: 2rem;
+   margin-top: 1em;
+ }
+  h3 {
+   font-size: 1.5rem;
+   margin-top: 1em;
+ }
+  p, ul {
+   font-size: 1rem;
+   margin-bottom: 1em;
+ }
+  ul {
+   padding-left: 1.5em;
+ }
+  /* Navigation */
+ nav {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+   padding: 1em;
+   background-color: #1e1e1e;
+ }
+  nav a,
+ .anchortohome,
+ .anchortoskills {
+   color: white;
+   text-decoration: none;
+   padding: 0.5em 1em;
+   border-radius: 4px;
+   transition: background 0.3s;
+ }
+  nav a:hover,
+ .anchortohome:hover,
+ .anchortoskills:hover {
+   background-color: #444;
+ }
+  /* Sections */
+ section {
+   background-color: white;
+   padding: 2em;
+   margin: 2em auto;
+   max-width: 1100px;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+ }
+  .section.alt {
+   background-color: #f0f7fa;
+ }
+  /* Images */
+ img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin: 0.5em auto;
+   border-radius: 6px;
+ }
+  /* Hero Sections */
+ .heroandintroduction {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: url("headerbackground.JPG");
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   text-align: center;
+   color: white;
+ }
+  .hero {
+   font-size: 4rem;
+   margin-bottom: 1rem;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+ }
+  .buttonforintroduction {
+   background-color: white;
+   color: black;
+   border: none;
+   border-radius: 5px;
+   padding: 0.8em 1.2em;
+   font-size: 1rem;
+   cursor: pointer;
+ }
+  .buttonforintroduction:hover {
+   background-color: #eee;
+ }
+  /* Cards */
+ .allcard {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+ }
+  .card {
+   background-color: #e0f7fa;
+   padding: 1.5em;
+   width: 300px;
+   border: 1px solid #ccc;
+   box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+   border-radius: 10px;
+   text-align: center;
+   transition: background 0.3s;
+ }
+  .card:hover {
+   background-color: #ffffff;
+ }
+  .card ul {
+   text-align: left;
+ }
+  /* Quotes */
+ #quote {
+   background-color: black;
+   color: red;
+   padding: 1.5em;
+   font-size: 1.2rem;
+   font-style: italic;
+   line-height: 1.8;
+   text-align: center;
+   margin: 2em auto;
+   max-width: 900px;
+   border-radius: 10px;
+ }
+  /* Content Blocks */
+ .content {
+   max-width: 900px;
+   margin: auto;
+   text-align: left;
+ }
+  .contentimage {
+   margin: 1em auto;
+   display: block;
+ }
+  /* Footer */
+ footer {
+   background-color: #1e1e1e;
+   color: white;
+   text-align: center;
+   padding: 2em 1em;
+   font-size: 0.9rem;
+   margin-top: 2em;
+   background-image: url("headerbackground.jpg");
+   background-size: cover;
+   background-position: center;
+ }
+  /* Responsive Design */
+ @media (max-width: 768px) {
+   nav {
+     flex-direction: column;
+   }
+    .card {
+     width: 90%;
+   }
+    .hero {
+     font-size: 2.5rem;
+   }
+    section {
+     margin: 1em;
+     padding: 1.2em;
+   }
+ }
+ 
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--a logo-->
+            <a class="anchortohome" href="">game 1</a>
+            <a class="anchortohome" href="">game 2</a>
+            <a class="anchortohome" href="">game 3</a>
+            <a class="anchortohome" href="">game 4</a>
+         </nav>
+
+        <div class="heroandintroduction">
+                <h1 class="hero">SKIING INSTRUCTION GUIDE</h1>
+                <a href="introduction.html">
+                <button class="buttonforintroduction" type="button">Back to HOME WEBSITE</button>
+                </a>
+        </div>  
+    </header>
+
+    <main>
+
+        <section class="history">
+            <img class="contentimage" src="history-of-skiing.jpg" alt="Photo of the history of skiing">
+            <div class="content">
+            <h2>HISTORY</h2>
+                <p>history brief</p>
+            </div>
+        </section>
+
+        <section class="competitions">
+            <div class="content">
+            <h2>COMPETITIONS</h2>
+                <p>simple introdction for it</p>
+            </div>
+            <img class="contentimage" src="winter olympics.jpg" alt="Photo of the winter olympics" width="30%">
+        </section>
+        
+        <section class="skiingskills">
+            <h2>SKIING TECHNIQUES</h2>
+            <div class="allcard">
+            <div class="card">
+                <h2><a class="anchortoskills" href="beginner-level.html">BEGINNER LEVEL &rarr;</a></h2>
+                <p><ul>
+                    <li>Familiar with ski gear and practicing on flat terrain</li>
+                    <li>The Snowplough</li>
+                    <li>The Snowplow Turns</li>
+                    <li>Goals: Learn the most basic and simple techniques of speed and direction control,
+                        you can glide smoothly on gentle slopes and low difficulty pistes</li>
+                </ul></p>
+                <img class="imageofskiingskills" src="beginner level.jpg" alt="A beginner skier" width="70%">
+            </div>
+
+            <div class="card">
+                <h2><a class="anchortoskills" href="intermediate-level.html">INTERMEDIATE LEVEL &rarr;</a></h2>
+                <P><ul>
+                    <li>The Stem Turns</li>
+                    <li>The Parallel Turns</li>
+                    <li>Goals: Learn the intermediate techniques of speed and direction control, 
+                        you can glide smoothly on different slopes and moderately difficult pistes</li>
+                </ul></P>
+                <img class="imageofskiingskills" src="intermediate level.jpg" alt="An intermediate skier" width="70%">
+            </div> 
+
+            <div class="card">
+                <h2><a class="anchortoskills" href="advanced-level.html">ADVANCED LEVEL &rarr;</a></h2>
+                <P><ul>
+                    <li>The Carving</li>
+                    <li>The Short Turns</li>
+                    <!--mogul-->
+                    <li>Goals: Learn the advanced techniques of speed and direction control,
+                        you can glide smoothly on very steep slopes and high difficulty pistes</li>
+                </ul></P>
+                <img class="imageofskiingskills" src="advanced level.jpg" alt="An advanced skier" width="70%">
+            </div>
+            </div>
+        </section>
+        
+        <section class="competitions">
+            <div class="content">
+            <h2>SKIING NEWS & UPDATES</h2>
+                <p>some news website links</p>
+            </div>
+            <img class="contentimage" src="skiing news.jpg" alt="a skier:Valérie Grenier" width="30%">
+        </section>
+
+        <footer>
+            <h1>SKI IS A LIFESTYLE</h1>    
+        </footer>
+    </main>
+
+</body>
+</html>
