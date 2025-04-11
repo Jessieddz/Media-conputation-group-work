@@ -1,14 +1,14 @@
 
 /* mainpage */
-#jessie {
+body.mainpag {
   padding-top: 60px; 
 }
 
-#jessie {
+body.mainpag {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: radial-gradient(circle at center,#fecbd4 0%, #2976b5 100%);
-  color:white;
+  
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -304,7 +304,7 @@ color: #000;
 
       /* intro */
 
-      body{
+      body.mainpag{
         margin: 0;
       width: 100%;
       background: radial-gradient(circle at center,#fecbd4 0%, #2976b5 100%);
@@ -412,7 +412,7 @@ background: #fecbd4;
 }
 
 /* basic operation */
-body{
+body.mainpag{
   margin: 0;
 width: 100%;
 background: radial-gradient(circle at center,#fecbd4 0%, #2976b5 100%);
@@ -629,7 +629,7 @@ font-weight: normal;
 }
 
 /* classic map */
-body{
+body.mainpag{
   margin: 0;
 width: 100%;
 background: radial-gradient(circle at center,#fecbd4 0%, #2976b5 100%);
@@ -819,7 +819,7 @@ font-size: 50px;
 }
 
 /* chracter */
-body{
+body.mainpag{
   font-family:Arial, Helvetica, sans-serif;
   background: radial-gradient(circle at center,#fecbd4 0%, #2976b5 100%);
 }
