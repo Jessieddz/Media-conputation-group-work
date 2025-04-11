@@ -1,0 +1,359 @@
+  body.ski {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background: radial-gradient(ellipse at center, rgb(247, 247, 247) 0%,rgb(110, 247, 254) 30%,rgb(138, 201, 246) 70%,rgb(173, 195, 255) 100%);
+    color: #1e1e1e;
+  }
+ 
+   /* Typography */
+  body.ski h1, body.ski h2,  body.ski h3,  body.ski h4 {
+    font-family: 'Rubik Mono One', monospace;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+  }
+  body.ski h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1em 0 0.5em;
+  }
+  body.ski h2 {
+    font-size: 2rem;
+    margin-top: 1em;
+  }
+  body.ski h3 {
+    font-size: 1.5rem;
+    margin-top: 1em;
+  }
+  body.ski p,  body.ski ul,  body.ski li {
+    font-size: 20px;
+    margin-bottom: 1em;
+   }
+   body.ski ul {
+    padding-left: 1.5em;
+    text-align: left;
+   }
+   
+ 
+ /*header*/
+ body.ski header{
+           display: flex;
+           flex-direction: column;
+           width:100%;
+           height:100vh;
+           z-index:10;
+           position: relative;
+      }
+body.ski div.heroandintroduction{
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items:center;
+ background-position:center;
+ background-size:cover;
+ height:100vh;
+ width:100%;
+ text-align:center;
+ }
+ body.ski div.heroandbeginner{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-position:center;
+    background-size:cover;
+    height:100vh;
+    width:100%;
+    text-align:center;
+ }
+ body.ski div.heroandintermediate{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-position:center;
+    background-size:cover;
+    height:100vh;
+    width:100%;
+    text-align:center;
+ }
+ body.ski div.heroandadvanced{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-position:center;
+    background-size:cover;
+    height:100vh;
+    width:100%;
+    text-align:center;
+ }
+ body.ski h1.hero{
+   color:#fbf9f9;
+   font-size: 6rem;
+   padding-top: 10rem;
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+ }   
+ body.ski h1.levels{
+    color:white;
+    font-size:100px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+} 
+body.ski h1.levelsitermediate{
+    color:white;
+    font-size:90px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  body.ski figure {
+   text-align: center;
+   margin:1em 0;
+   width:100%;
+ } 
+  body.ski img.imageofskiingskills{
+    width:100%;
+    height:150px;
+    display: block;
+  }
+ body.ski figcaption{
+   text-align:center;
+   padding:10px;
+   margin:10px;
+ }
+ body.ski button.buttonforbacktoguidepage{
+    background-color: white;
+    border-radius: 5px;
+    color:black;
+    padding: 15px 10px;
+    font-size: 20px;
+    margin-top: 1rem;
+    font-family:'Times New Roman', Times, serif;
+}
+body.ski button.buttonforbacktoguidepage:hover {
+    border-color:black;
+    background-color: #000;
+    color: #62d2fb;
+}
+ /* nav bar */
+ body.ski button.buttonforintroduction{
+ display:flex;
+ flex-direction: row;
+ background-color: white;
+ border-radius: 5px;
+ color:black;
+ padding: 10px 10px;
+ font-size: 15px;
+ cursor:pointer;
+ font-family: 'Times New Roman', Times, serif;
+ }
+ body.ski button.buttonforintroduction:hover {
+ background-color: #000;
+ color: #4bdee8;
+ border-color:#000;
+ font-size: 20px;
+ }
+ body.ski a.nav-link {
+ color: white;
+ text-decoration: none;
+ padding: 0.5em 1em;
+ display: inline-block;
+ }
+ body.ski div.navbar-inner {
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ background: radial-gradient(ellipse at center, rgb(247, 247, 247) 0%,rgb(157, 219, 223) 30%,rgb(138, 201, 246) 100%);
+ padding:15px 15px;
+ gap: 1em;
+ width:100%;
+ position:fixed;
+ top:0;
+ }
+ body.ski a.nav-link:hover {
+ background-color: #fafbfc;
+ border-radius: 5px;
+ }
+ body.ski ul.nav-menu {
+ list-style: none;
+ display: flex;
+ justify-content:flex-end;
+ align-items: center;
+ gap: 1.5em;
+ padding: 0;
+ margin: 0;
+ }
+ body.ski li.nav-item {
+ position: relative;
+ align-items:center;
+ justify-content:flex-end;
+ padding-top: 10px;
+ }
+ /* Dropdown menu */
+ body.ski div.dropdown {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left: 50%;
+ transform: translateX(-50%);
+ background-color: #f8fafb;
+ padding: 0.5em 0;
+ border-radius: 5px;
+ min-width: 200px;
+ z-index: 100;
+ }
+ body.ski div.dropdown a {
+ display: block;
+ color: white;
+ padding: 0.5em 1em;
+ text-decoration: none;
+ }
+ body.ski div body.ski.dropdown a:hover {
+ background-color:#fafcfd;
+ }
+ body.ski li.nav-item:hover .dropdown {
+ display: block;
+ }
+ body.ski nav.navbar-right a {
+ color: rgb(0, 0, 0);
+ margin-right: 20px;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 16px;
+ transition: color 0.3s;
+ }
+ 
+    /*main*/
+    body.ski main{
+    display:block;
+}
+   /* Sections */
+
+   body.ski section {
+    background-color: rgb(250, 251, 252);
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 1100px;/*cards' max-width*/
+    border-radius: 10px;
+  }
+ 
+   /* Images */
+   body.ski img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5em auto;
+    border-radius: 6px;
+  }
+ 
+ 
+ 
+   /* Cards */
+   body.ski div.allcard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  body.ski div.card {
+    background-color: #e0f7fa;
+    padding: 1.5em;
+    width: 300px;
+    height:920px;
+    border: 1px solid #ccc;
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: background 1s;
+    overflow:hidden;
+  }
+  body.ski div.cardforcompetitions{
+    background-color: #e0f7fa;
+    padding: 0.5em;
+    width: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: background 1s;
+    overflow:hidden;
+  }
+  body.ski div.card:hover {
+    background-color: #2ad4e7;
+  }
+  body.ski div.cardcontent{
+     height:430px;
+   }
+   body.ski a.anchortoskills {
+   color:black;
+   text-decoration: none;
+ }
+ body.ski a.anchortoskills:hover{
+   text-decoration:line;
+   transition: width 2s;
+ }
+ body.ski div.allcardforbeginner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  body.ski div.cardforsnouplough{
+    background-color: #e0f7fa;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    overflow:hidden;
+  }
+  body.ski div.conclusion{
+    text-align:center;
+  }
+   /* Content Blocks */
+   body.ski div.content {
+    max-width: 900px;
+    margin: auto;
+  }
+  body.ski img.contentimage {
+    margin: 1em auto;
+  }
+ 
+   /* Footer */
+   body.ski footer {
+    text-align: center;
+    padding: 0.1em 1em;
+    margin-top: 2em;
+    background-size: cover;
+    background-position: center;
+  }
+  body.ski h1.footerh1{
+   color:rgb(214, 211, 211);
+   text-shadow:#000;
+  }
+  body.ski p.footer2{
+    color:rgb(214, 211, 211);
+    text-shadow:#000;
+   }
+   /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+     .card {
+      width: 90%;
+    }
+     .hero {
+      font-size: 2.5rem;
+    }
+     section {
+      margin: 1em;
+      padding: 1.2em;
+    }
+  }
+  
