@@ -19,6 +19,7 @@
         line-height: 1.6;
         background:#b8f9f9;
         color: #1e1e1e;
+        font-family: Arial, Helvetica, sans-serif;
       }
      
        /* Typography */
@@ -117,10 +118,10 @@ section {
 <body>
     <header>
     <div class="heroandintroduction">
-        <h1 class="hero">Explanation page</h1>
+        <h1 class="hero">Explanations</h1>
         <figure class="logofigure">
         <img class="logo" src="logo.jpg" alt="Photo of logo" width="40%">
-        <figcaption class="chalogocaption">Created by YINGJIA YU, WEIXIN ZHANG</figcaption>
+        <figcaption class="chalogocaption">Logo created by YINGJIA YU & WEIXIN ZHANG</figcaption>
        </figure>
       </div>
      </header>
@@ -128,21 +129,125 @@ section {
     <main>
      <section>
         <div class="content">
-        <h2>HTML</h2>
-        <p>There is our explanation page </p>
+          <h2>General Summary</h2>
+        <ul>
+          <li>All content blocks were grouped inside containers with visible colours and shadows, making it easy for readers to digest the information.</li>
+          <li>Each section was structured with semantic HTML elements like 'header', 'nav', 'main' and 'footer' to ensure clean document structure and readability.</li>
+          <li>A navigation bar was implemented to allow quick access to any section on the page, improving the user experience and usability of the webpages.</li>
+          <li>A carousel component was used to make the webpage more dynamic and space-efficient, helping to avoid the clutter of information.</li>
+          <li>Custom fonts were imported through google fonts to improve the aesthetics of the website allowing for a more readable page</li>
+          <li>A flexbox layout was applied to content areas an the navigation to allow viewing on different devices which may have differing sizes</li>
+          <li>Hover effects were implemented to create a more interactive and dynamic webpage  which would in turn enhance user engagement through CSS animations.</li>
+        </ul>
         </div>
     </section>
 
     <section>
-        <div class="content">
-        <h2>CSS</h2>
-        <p>There is our explanation page</p>
-        </div>
+      <div class="content">
+      <h2>HTML</h2>
+      <ul>
+        <li>Alt text: allows people unable to see the images on screen to still be able to digest and understand all the information being depicted.</li>
+        <li>Anchor <a>: creates links to other web pages, to add fun and connectivity.</li>
+        <li>Div: Names and divides different parts of the content, giving them the same or different class names depending on needs, to make all of the information more organised.</li>
+        <li>Figure</li>
+        <ul>
+          <li>Figure: Includes image and the caption of the image and lets it look like a whole section thus improving clarity within the webpage.</li>
+          <li>Image: adds an image to the web page, making it more fun and vivid.</li>
+          <li>Fig caption: show the sources, like where the picture is from.</li>
+        </ul>
+        <li>List</li>
+        <ul>
+          <li>Li: used to represent a listed item. Lists make the page clearer, so the audience can more easily understand and remember the key points.</li>
+          <li>ul: List different points in regular dot points (unordered, not numbered).</li>
+        </ul>
+        <li>Line Break (br): adds a small line break between content. This can improve readability as it separates/spaces/divides bits of information.</li>
+        <li>Sections</li>
+        <ul>
+          <li>Footer: References creators. It can also be a nice space to quote a slogan.</li>
+          <li>Header: includes a representative image that occupies most of the screen and shows the main idea of the webpage.</li>
+          <li>Main: The section in which we put the main body of information (that doesn’t belong in the header, footer, or nav bar) so the user can see all specific and important information within one big section</li>
+          <li>Navigation Bar: enables seamless movement between web pages. Each personal webpage features a fixed navigation bar, allowing viewers to easily enter and exit pages throughout the website. When selecting "game" or "sport," dropdown menus display representative icons and the individual page names, enhancing engagement and recognition. Additionally, the navigation bar includes a logo and hyperlinks, strengthening connections between various web pages.</li>
+          <li>Sections: clearly divides each category of information in a way that is understandable to the readers</li>
+        </ul>
+        <li>Text</li>
+        <ul>
+          <li>H1: used for the main sections of the web page, like the webpage’s name, and show the most important information for viewers</li>
+          <li>H2: used for sub-sections of the main heading, further organising the information</li>
+          <li>P: used for the main body text</li>
+        </ul>
+        
+      </ul>
+      
+      </div>
+  </section>
+
+    <section>
+      <div class="content">
+      <h2>CSS</h2>
+      <ul>
+        <li>Background</li>
+        <ul>
+          <li>Background-color: Set the color of the background for a section, so they can easily be differentiated and the overall tone is more unified. For example, setting the same color scheme but having a different color background for each section can make viewers see different modules better, and setting background-color for the whole body to make the whole page more coordinated and integrated.</li>
+          <li>Background-image: Setting the background as a picture can increase interest and reflect the theme of the web page</li>
+          <li>Background-position: Determines the position of the image, which affects the distribution of the background image</li>
+          <li>Background-size: changes the background image’s size, such as the ones in the header.</li>
+        </ul>
+        <li>Behaviours</li>
+        <ul>
+          <li></li>
+          <li>Cursor: Sets the style of mouse cursor when it hovers over a certain element. This makes the webpage feel more interactive and engaging.</li>
+          <li>Scroll-behavior: Sets how the text is animated as it moves within a scrollable file, whether it is a smooth transition or a direct jump.</li>
+          <li>Transition: Allows an element to switch between two states when it is interacted with. This builds a more enjoyable and engaging experience for the user as the website will react to their movements.</li>
+        </ul>
+        <li>Positioning</li>
+        <ul>
+          <li>Align-items: Sets the vertical alignment or the position of the element</li>
+          <li>Gap: Sets size of gutters between rows and columns. </li>
+          <li>Justify-content: Sets the horizontal distribution of elements, such as flex-end, can be set according to the needs of each section</li>
+          <li>Margin: sets the spacing outside of the defined borders or parameters; spreads the text in a way that is readable and pleasant to look at. </li>
+          <li>Padding: Adds space between the borders of a parent element and its child elements</li>
+          <li>Position: Sets the type of positioning method used for an element; whether it is static, relative, fixed, absolute or sticky.</li>
+          <li>Text-align: decides the text’s position – such as left, right, or center – in order to match other contents well</li>
+        </ul>
+        <li>Section Formatting</li>
+        <ul>
+          <li>Border-radius: Makes the border's corners round to make the page look more fun and inviting.</li>
+          <li>Box-shadow: Sets a shadow effect for an element, such as a section or a button, in order to highlight it</li>
+        </ul>
+        <li>Flex-box</li>
+        <ul>
+          <li>Display: Adjusts a flex-box to create better and more flexible layout adjustments.</li>
+          <li>Flex-direction: The setting is vertical layout or horizontal layout, which can be set according to different needs</li>
+          <li>Flex-wrap: Sets whether flex-items must stay within their lines or are able to move beyond. Helps the adaptability of the webpage as it can be coherent on any size screen size.</li>
+          <li>“overflow: auto”: Adds scroll bars to the text when necessary (e.g. when the text has overflowed out of the borders of its sections.</li>
+          <li>Z-index: Sets the positioning of an element that is overlapping or being overlapped by other elements. Overlapping elements like this can make the website feel more dynamic and less rigid.</li> 
+        </ul>
+        <li>Sizing</li>  
+        <ul>
+          <li>Height: sets the height for elements, To better match the height of the other content</li>
+          <li>Width: sets the width for elements, To better match the width of the other content</li>
+          <li>Min-width: Sets the minimum width to prevent elements from becoming too small</li>
+          <li>Max-width: Sets the maximum width to prevent child elements from going beyond the borders of their intended margins.</li>
+        </ul>
+        <li>Typography</li>
+        <ul>
+          <li>Color: Sets the font color. This can be used to make the text better match the overall theme or to emphasise certain words.</li>
+          <li>Font-family: Different fonts can better match the theme.</li>
+          <li>Font-size: Sets the size of the text to make it more readable or to emphasise certain parts.</li>
+          <li>Font-weight: used to emphasise certain words</li>
+          <li>Line-height: Controls the line spacing of the text, so that the audience can read the text easily, and make the overall web page look more balanced and clean</li>
+          <li>Text-decoration: Sets what style certain lines of text should have.</li>
+          <li>Text-shadow: Sets a shadow effect onto text, which can be used to highlight its importance, such as for a web heading.</li>
+          <li>List-style: formats unique dot points at the start of the list to create a more engaging user experience.</li>
+        </ul>
+      </ul>
+      </div>
     </section>
 
     <footer>
             <h1>Sport & Game hub</h1>  
             <p>Created by the group 3.5 · 2025</p>  
+            <p>Edited by Kelly Ly</p>
         </footer>
     </main>
 </body>
