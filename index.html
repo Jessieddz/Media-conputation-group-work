@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skiing Instruction Guide</title>
+    <style>
+  * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+  html, body {
+   width: 100%;
+   height: 100%;
+   scroll-behavior: smooth;
+   font-family: 'Times New Roman', Times, serif;
+   line-height: 1.6;
+   background:#b8f9f9;
+   color: #1e1e1e;
+ }
+
+  /* Typography */
+ h1, h2, h3, h4 {
+   font-family: 'Rubik Mono One', monospace;
+   color: #2d2d2d;
+   margin-bottom: 10px;
+ }
+  h1 {
+   font-size: 2.5rem;
+   text-align: center;
+   margin: 1em 0 0.5em;
+ }
+  h2 {
+   font-size: 2rem;
+
+ }
+  h3 {
+   font-size: 1.5rem;
+   margin-top: 1em;
+ }
+  p, ul, li{
+   font-size: 20px;
+   margin-bottom: 1em;
+  }
+  ul {
+   padding-left: 1.5em;
+   text-align: left;
+  }
+
+/*header*/
+header{
+          background-color: #b8f9f9;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align:center;
+          width:100%;
+          height:100vh;
+          z-index:10;
+          position: relative;
+     }
+
+.heroandintroduction{
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content: center;
+height:100vh;
+width:100%;
+text-align:center;
+}
+.hero{
+  color:#000;
+  font-size: 6rem;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}  
+.logofigure{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin:0;
+}  
+.logo{
+display:block;
+}
+.chalogocaption {
+  padding: 10px;
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-family:Arial, Helvetica, sans-serif;
+}
+/* nav bar */
+.nav-link {
+color: white;
+text-decoration: none;
+padding: 0.5em 1em;
+display: inline-block;
+}
+.navbar-inner {
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color:rgb(30, 192, 228);
+padding:20px 20px;
+gap: 1em;
+width:100%;
+position:fixed;
+top:0;
+}
+
+.nav-link:hover {
+background-color: #fafbfc;
+border-radius: 5px;
+}
+.nav-menu {
+list-style: none;
+display: flex;
+justify-content:flex-end;
+align-items: center;
+gap: 1.5em;
+padding: 0;
+margin: 0;
+}
+.navbar-right{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap:1em;
+}
+.nav-item {
+position: relative;
+align-items: center;
+justify-content:flex-end;
+}
+/* Dropdown menu */
+.dropdown {
+display: none;
+position: absolute;
+top: 100%;
+left: 50%;
+transform: translateX(-50%);
+background-color: #f8fafb;
+padding: 0.5em 0;
+border-radius: 5px;
+min-width: 200px;
+z-index: 100;
+}
+.dropdown a {
+display: block;
+color: white;
+padding: 0.5em 1em;
+text-decoration: none;
+}
+.dropdown a:hover {
+background-color:#fafcfd;
+}
+.nav-item:hover .dropdown {
+display: block;
+}
+.navbar-right a {
+color: rgb(0, 0, 0);
+margin-right: 20px;
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+transition: color 0.3s;
+}
+
+.chalogocaption{
+  padding:10px;
+  margin:10px;
+}
+  /* Sections */
+  section {
+   background-color: rgb(250, 251, 252);
+   padding: 2em 2em;
+   margin: 2em auto;
+   max-width: 1100px;/*cards' max-width*/
+   border-radius: 10px;
+ }
+ img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   margin: 0.5em auto;
+   border-radius: 6px;
+ }
+ .allcard {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+ }
+  .card {
+   background-color: #e0f7fa;
+   padding: 1.5em;
+   width: 300px;
+   height:350px;
+   border: 1px solid #ccc;
+   box-shadow: 10px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   text-align: center;
+   transition: background 1s;
+   overflow:hidden;
+ }
+  .card:hover {
+   background-color: #2ad4e7;
+ }
+  .cardcontent{
+    height:245px;
+  }
+  .imageofskiingskills{
+    width:100%;
+    height:150px;
+  }
+  /* Content Blocks */
+  .content {
+   max-width: 900px;
+   margin: auto;
+ }
+ .contentimage {
+   margin: 1em auto;
+ }
+
+  /* Footer */
+ footer {
+   background-color:rgb(30, 192, 228);
+   text-align: center;
+   padding: 0.1em 1em;
+   margin-top: 2em;
+ }
+  /* Responsive Design */
+ @media (max-width: 768px) {
+   nav {
+     flex-direction: column;
+   }
+    .card {
+     width: 90%;
+   }
+    .hero {
+     font-size: 2.5rem;
+   }
+    section {
+     margin: 1em;
+     padding: 1.2em;
+   }
+ }
+ 
+
+
+    </style>
+</head>
+
+<body>
+        <!-- Nav bar -->
+        <header class="navbar">
+          <nav class="navbar-right">
+            <div class="navbar-inner">
+             <img src="logo.jpg" alt="Logo">
+             <div class="navbar-right">
+             <ul class="nav-menu">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Game▾</a>
+                <div class="dropdown">
+                    <a href="tennisworld.html">🐱 Party Animal</a>
+                    <a href="skiing.html">❤️ Undertale</a>
+                </div>
+                </li>
+              </ul>
+           
+             
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sport▾</a>
+                  <div class="dropdown">
+                    <a href="tennisworld.html">🎾 Tennis World</a>
+                    <a href="skiing.html">⛷️ Skiing Instruction Guide</a>
+                    <a href="undertale.html">🏀 Basketball</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="heroandintroduction">
+          <h1 class="hero">Sport & Game Hub</h1>
+
+         <figure class="logofigure">
+          <img class="logo" src="logo.jpg" alt="Photo of logo" width="40%">
+          <figcaption class="chalogocaption">Created by YINGJIA YU, WEIXIN ZHANG</figcaption>
+         </figure>
+        </div>
+       </header>
+
+  
+
+    <main>
+
+        <section>
+            <h2>👟SPORT</h2>
+            <div class="allcard">
+              <div class="card">
+                <p><a class="anchortowebpages" href="skiing-instruction-guide.html">SKI &rarr;</a></p>
+                <img src="skiing-news.jpg" alt="a photo of skiing" width="70%">
+              </div>
+              <div class="card">
+                <p><a class="anchortowebpages" href=".html">BASKETBALL &rarr;</a></p>
+                <img src="skiing-news.jpg" alt="a photo of skiing" width="70%">
+              </div>
+              <div class="card">
+                <p><a class="anchortowebpages" href=".html">TENNIS &rarr;</a></p>
+                <img src="skiing-news.jpg" alt="a photo of skiing" width="70%">
+              </div>
+            </div>
+        </section>
+
+        <section>
+          <h2>🎮GAME</h2>
+          <div class="allcard">
+            <div class="card">
+              <p><a class="anchortowebpages" href="skiing-instruction-guide.html">ANIMAL PARTY &rarr;</a></p>
+              <img src="skiing-news.jpg" alt="a photo of skiing" width="70%">
+            </div>
+            <div class="card">
+              <p><a class="anchortowebpages" href=".html"> UNDERTALE&rarr;</a></p>
+              <img src="skiing-news.jpg" alt="a photo of skiing" width="70%">
+            </div>
+          </div>
+      </section>
+
+        <section>
+            <div class="content">
+            <h2>EXPLANATION PAGE</h2>
+            <p>There is our explanation page,<a class="anchortowebpages" href=".html"> Click here</a> </p>
+            </div>
+        </section>
+
+        <footer>
+            <h1>Sport & Game hub</h1>  
+            <p>Created by  Yingjia Yu · 2025</p>  
+        </footer>
+    </main>
+
+</body>
+</html>
