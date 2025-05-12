@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html class="tennisworld">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tennis World</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Open+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <style>   html.tennisworld {
+    /* Custom Properties (scoped to tennisworld) */
+    --primary: #007bff;        /* Vivid Blue */
+    --dark: #000000;           /* Pure Black */
+    --light: #ffffff;          /* White (main text) */
+    --accent: #001f3f;         /* Deep Navy Blue */
+    --text-gray: #a0a0a0;       /* Muted light gray */
+    --bg-gradient: linear-gradient(145deg, var(--primary), #003b80);
+  }
+  
+  /* Global Reset */
+  html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    line-height: 1.7;
+    font-size: 1.125rem;
+  }
+  
+.container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+.row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+.half-section {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+.text-container {
+    width: 100%;
+  }
+  
+  /* Header & Navigation */
+header {
+    background: var(--bg-gradient);
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    letter-spacing: 2px;
+    color: var(--light);
+  }
+  
+  
+section {
+    padding: 2rem 0;
+  }
+  
+section h2 {
+    font-size: 2.25rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+section p {
+    margin: 1.5rem auto;
+    color: var(--text-gray);
+    text-align: justify;
+  }
+  
+img.uniform {
+    display: block;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,123,255,0.3);
+    margin: 1rem auto;
+  }
+  figcaption{
+   text-align:center;
+   padding:10px;
+   margin:10px;
+ }
+ /* nav */
+ button.buttonforintroduction{
+ display:flex;
+ flex-direction: row;
+ background-color: white;
+ border-radius: 5px;
+ color:black;
+ padding: 10px 10px;
+ font-size: 15px;
+ cursor:pointer;
+ font-family: 'Times New Roman', Times, serif;
+ }
+button.buttonforintroduction:hover {
+ background-color: #000;
+ color: #4bdee8;
+ border-color:#000;
+ font-size: 20px;
+ }
+a.nav-link {
+ color: white;
+ text-decoration: none;
+ padding: 0.5em 1em;
+ display: inline-block;
+ }
+div.navbar-inner {
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ background: radial-gradient(ellipse at center, rgb(247, 247, 247) 0%,rgb(157, 219, 223) 30%,rgb(138, 201, 246) 100%);
+ padding:15px 15px;
+ gap: 1em;
+ width:100%;
+ position:fixed;
+ top:0;
+ }
+a.nav-link:hover {
+ background-color: #fafbfc;
+ border-radius: 5px;
+ }
+ul.nav-menu {
+ list-style: none;
+ display: flex;
+ justify-content:flex-end;
+ align-items: center;
+ gap: 1.5em;
+ padding: 0;
+ margin: 0;
+ }
+li.nav-item {
+ position: relative;
+ align-items:center;
+ justify-content:flex-end;
+ padding-top: 10px;
+ }
+ /* Dropdown menu */
+div.dropdown {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left: 50%;
+ transform: translateX(-50%);
+ background-color: #f8fafb;
+ padding: 0.5em 0;
+ border-radius: 5px;
+ min-width: 200px;
+ z-index: 100;
+ }
+div.dropdown a {
+ display: block;
+ color: white;
+ padding: 0.5em 1em;
+ text-decoration: none;
+ }
+div body.ski.dropdown a:hover {
+ background-color:#fafcfd;
+ }
+li.nav-item:hover .dropdown {
+ display: block;
+ }
+nav.navbar-right a {
+ color: rgb(0, 0, 0);
+ margin-right: 20px;
+ text-decoration: none;
+ font-weight: bold;
+ font-size: 16px;
+ transition: color 0.3s;
+ }
+ div.heroandintroduction{
+ display: flex;
+ flex-direction: column;
+ justify-content:center;
+ align-items:center;
+ background-position:center;
+ background-size:cover;
+ height:100vh;
+ width:100%;
+ text-align:center;
+ }
+ h1.hero{
+   color:#fbf9f9;
+   font-size: 6rem;
+   padding-top: 10rem;
+   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+ }   
+ 
+  
+  /* Footer */
+  html.tennisworld footer {
+    background-color: var(--accent);
+    color: #aaa;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  /* Tennisworld Animations */
+  html.tennisworld #rules {
+    animation: tennisworld-fadeIn 2s ease-out forwards;
+  }
+  
+  @keyframes tennisworld-fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+   #how-to-play {
+    animation: tennisworld-slideInFromLeft 1.5s ease-out forwards;
+  }
+  
+  @keyframes tennisworld-slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  
+  @keyframes tennisworld-slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  html.tennisworld #strategies {
+    animation: tennisworld-zoomIn 1.5s ease-out forwards;
+  }
+  
+  @keyframes tennisworld-zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Responsive Adjustments (Tennisworld) */
+  @media (max-width: 600px) {
+    html.tennisworld header h1 {
+      font-size: 2.5rem;
+    }
+.row {
+      flex-direction: column;
+    }
+  }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+
+  <header class="navbar">
+    <nav class="navbar-right">
+      <div class="navbar-inner">
+       <ul class="nav-menu">
+          <li class="nav-item">
+          <a class="nav-link" href="#">Tennis Knowledge▾</a>
+          <div class="dropdown">
+              <a href="tennisworld.html">Instruction</a>
+              <a href="skiing.html">Equipment & Court types</a>
+          </div>
+          </li>
+        </ul>
+
+        <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Test▾</a>
+              <div class="dropdown">
+                <a href="skiing.html">⛷️ Quiz</a>
+                <a href="undertale.html">🏀 Game</a>
+              </div>
+            </li>
+          </ul>
+     
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explanation page</a>
+          </li>
+        </ul>
+
+        <a href="../index.html">
+            <button class="buttonforintroduction" type="button">Back to home page</button>
+          </a>
+      </div>
+    </nav>
+
+    <div class="heroandintroduction">
+        <h1 class="hero">INSTRUCTION</h1><br><br><br><br>
+        <figcaption>Figure 1:</figcaption>
+      </div>
+</header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="row">
+      <section id="rules" class="half-section">
+        <div class="text-container">
+          <h2>🎯 Game Rules</h2>
+          <figure>
+          <img src="assets/download (3) copy.jpeg" alt="Tennis scoring diagram" class="uniform" />
+          <figcaption>figure1</figcaption>
+        </figure>
+          <p>
+            Tennis is unique in its scoring and match structure. A game starts at "love" (zero)
+            and progresses through points — 15, 30, 40 — until a player wins the game. When both
+            players reach 40, the score is called “deuce,” and a player must secure a two-point
+            advantage to win that game. Sets typically consist of six or more games, and matches are
+            usually decided in a best-of-three or best-of-five format.
+          </p>
+          <p>
+            Other key rules include the requirement for the ball to land within the boundaries of
+            the court, and in doubles, communication and positioning add further complexity.
+          </p>
+        </div>
+      </section>
+    
+      <section id="how-to-play" class="half-section">
+        <div class="text-container">
+          <h2>🎾 How to Play</h2>
+          <figure>
+          <img src="assets/download (7).jpeg" alt="Player serving the ball" class="uniform" />
+          <figcaption>figure 2</figcaption>
+        </figure>
+          <p>
+            Mastering tennis starts with learning fundamental techniques. The serve is the first
+            stroke of every point. Toss the ball with a controlled motion and hit it at the peak of
+            your swing with a consistent follow-through. Once the point begins, players use forehand
+            and backhand strokes to return the ball.
+          </p>
+          <p>
+            Understanding when to play aggressively versus defensively is crucial. Drills,
+            repetition, and coaching feedback are recommended to improve consistency.
+          </p>
+        </div>
+      </section>
+    </div>
+
+      <section id="strategies" class="half-section">
+        <div class="text-container">
+          <h2>📈 Strategies</h2>
+          <figure>
+          <img src="assets/download.png" alt="Tennis Strategy Diagram" class="uniform" />
+          <figcaption>figure 3</figcaption>
+        </figure>
+          <p>
+            Excelling in tennis requires technical skill and smart strategy. In singles, effective
+            baseline play and shot placement are key, while doubles emphasize teamwork and net coordination.
+          </p>
+          <p>
+            Observe professional matches to learn how strategies adapt during in-game situations.
+            Experiment with pace, spin, and shot selection for continuous improvement.
+          </p>
+          <p>
+            Mental fortitude is equally important—staying focused under pressure can turn the tide of a match.
+            Players often develop rituals or routines between points to manage nerves and maintain concentration.
+          </p>
+          <p>
+            Court awareness, footwork, and anticipation help players position themselves optimally.
+            Reading an opponent's body language and predicting shot direction can provide a significant edge.
+          </p>
+          <p>
+            Advanced strategies involve mixing up shot depth and speed, using drop shots, lobs, and angled volleys
+            to disrupt the opponent’s rhythm. Understanding your own strengths—and your opponent's weaknesses—
+            allows you to tailor tactics effectively.
+          </p>
+          <p>
+            Finally, strategic stamina is critical. Even the best tactics won’t work without the endurance to
+            sustain them over long matches. Players incorporate fitness routines, stretching, and recovery practices
+            into their training to ensure peak performance when it matters most.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="full-width">
+    <div class="container">
+      <p>© 2025 Tennis World. Designed by Quazi Mazeed Azad — Student ID: 1615480.</p>
+    </div>
+  </footer>
+</body>
+</html>
